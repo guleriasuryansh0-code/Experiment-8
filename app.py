@@ -6,7 +6,7 @@ app=Flask(__name__)
 model=joblib.load("model.pkl")
 @app.route("/")
 def home():
-    return jsonify({"message":"App is running!!"})
+    return jsonify({"message":"New version is deployed..."})
 
 @app.route("/predict", methods=["POST"])
 def predict():
